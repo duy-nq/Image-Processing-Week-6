@@ -104,19 +104,6 @@ def result(f, img1, img2):
 
     plt.show()
 
-def result2(f, img1, img2):
-    img1_mf = median_filter(f, img1)
-
-    plt.subplot(121)
-    plt.imshow(img1, cmap='gray')
-    plt.title('Original')
-
-    plt.subplot(122)
-    plt.imshow(img1_mf, cmap='gray')
-    plt.title('Median Filter')
-
-    plt.show()
-
 def main():
     cam9 = readFromBinaryFile('camera9bin.sec')
     cam99 = readFromBinaryFile('camera99bin.sec')
